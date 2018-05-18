@@ -11,5 +11,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lennerblom/01-node-ecosystem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lennerblom/01-node-ecosystem/issues"
+  },
+  "homepage": "https://github.com/Lennerblom/01-node-ecosystem#readme",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3"
+  }
 }
