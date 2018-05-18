@@ -1,20 +1,25 @@
 'use strict';
-
+//import greet from '..lib/greet.js'; (need babl installed?)
 const greet = require('../lib/greet.js');
 
 describe('greet module', () => {
 
   it('should return null when passed non string', () => {
 
-    expect(greet()).toBeNull();
+    const expected = null;
+
+    const actual = greet(0);
+
+    expect(actual).toBe(expected);
+    
   });
 
   it('should return "hello (name)" when passed (name)', () => {
 
-    let expected = `hello ${name}`;
+    const expected = `hello, Mike`;
 
-    let actual = greet('name');
+    const actual = greet('Mike');
 
-    expect(actual).toBe();
+    expect(actual).toBe(expected);
   });
 });
