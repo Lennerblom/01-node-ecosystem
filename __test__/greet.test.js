@@ -1,5 +1,5 @@
 'use strict';
-//import greet from '..lib/greet.js'; (need babl installed?)
+
 const greet = require('../lib/greet.js');
 
 describe('greet module', () => {
