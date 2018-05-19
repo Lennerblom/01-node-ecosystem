@@ -8,7 +8,7 @@ describe('greet module', () => {
 
     const expected = null;
 
-    const actual = greet(0);
+    const actual = greet(77);
 
     expect(actual).toBe(expected);
     
