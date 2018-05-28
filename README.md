@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Lennerblom/01-node-ecosystem.svg?branch=master)](https://travis-ci.org/Lennerblom/01-node-ecosystem)
+
 # 01 Node Ecosystem
 This repository contains two modules, greet.js. and  arithmetic.js 
 
