@@ -1,50 +1,24 @@
-![CF](https://camo.githubusercontent.com/70edab54bba80edb7493cad3135e9606781cbb6b/687474703a2f2f692e696d6775722e636f6d2f377635415363382e706e67) 01: Node Ecosystem
-===
+# 01 Node Ecosystem
+This repository contains two modules, greet.js. and  arithmetic.js 
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-susan`
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+The greet.js module contains a greet function that has an airty of one, labeled (name), and the required data type is a string.  The return value is a concatenated string that will say, "Hello, (name).
 
-## Configuration
-Configure the root of your repository with the following files and directories. Thoughtfully name and organize any additional configuration or module files.
+    greet('Mike');
+    //returns:
+    Hello, Mike
 
-* **README.md** - contains your documentation
-* **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
-* **.eslintrc.json** - contains the course linter configuration
-* **.eslintignore** - contains the course linter ignore configuration
-* **lib/** - contains module definitions
-* **__test__/** - contains unit tests
+    greet(77);
+    //returns: null
 
-## Testing
+The arithmetic.js module contains a mathObject that contains two methods named add and sub.  Both methods a\have an airty of two and will return null when passed a non interger.  The add method will return the value of a + b and the sub method will will return the value of c - d.
 
-### Greet Module Tests
-* Write a test that expects the greet module to return `null` when you supply non-string values
-* Write a test the expects the greet module to return `'hello world'`
-  * This should happen when invoked with `'world'` as the first argument
+    mathObject.add(1,2);
+    //returns: 3
 
-### Arithmetic Module Tests
-* Test each method for proper use (invoked with number arguments)
-* Test each method for inproper use (invoked with one or more non-number arguments)
+    mathObject.sub(4,3);
+    //returns: 1
 
-## Feature Tasks
+    mathObject.sub('four','three');
+    //returns: null
 
-### Greet Module
-Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
-* The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
-* The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
-* The `greet` function should return `null` if the input is not a string
 
-### Arithmetic Module
-Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module exports an object and should have `add` and `sub` methods that implement addition and subtraction.
-* The `add` method should have a 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the sum of the 2 numbers
-* The `sub` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the second parameter subtracted from the first parameter
-
-### Documentation
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
